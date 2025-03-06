@@ -1,0 +1,308 @@
+shree@Shreesha_Gopal MINGW64 ~/OneDrive/Desktop/public api project
+$ nodemon index.js 
+[nodemon] 3.1.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node index.js`
+Server running on http://localhost:3000
+Error fetching recipe details: AxiosError: Client network socket disconnected before secure TLS connection was established
+    at AxiosError.from (file:///C:/Users/shree/OneDrive/Desktop/public%20api%20project/node_modules/axios/lib/core/AxiosError.js:92:14)
+    at RedirectableRequest.handleRequestError (file:///C:/Users/shree/OneDrive/Desktop/public%20api%20project/node_modules/axios/lib/adapters/http.js:620:25)
+    at RedirectableRequest.emit (node:events:524:28)
+    at eventHandlers.<computed> (C:\Users\shree\OneDrive\Desktop\public api project\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:524:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:512:5)
+    at TLSSocket.emit (node:events:524:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (file:///C:/Users/shree/OneDrive/Desktop/public%20api%20project/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/Users/shree/OneDrive/Desktop/public%20api%20project/index.js:38:24 {
+  localAddress: undefined,
+  port: 443,
+  host: 'api.spoonacular.com',
+  path: null,
+  code: 'ECONNRESET',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function [FormData]], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': undefined,
+      'User-Agent': 'axios/1.8.1',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'get',
+    url: 'https://api.spoonacular.com/recipes/642583/information?apiKey=0f7e1eeb01e34246a68313ea587af7cb',
+    allowAbsoluteUrls: true,
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Function: handleRequestSocket]
+    },
+    _writableState: WritableState {
+      highWaterMark: 16384,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/recipes/642583/information?apiKey=0f7e1eeb01e34246a68313ea587af7cb',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'api.spoonacular.com',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/recipes/642583/information',
+      search: '?apiKey=0f7e1eeb01e34246a68313ea587af7cb'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'GET /recipes/642583/information?apiKey=0f7e1eeb01e34246a68313ea587af7cb HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.8.1\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.spoonacular.com\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/recipes/642583/information?apiKey=0f7e1eeb01e34246a68313ea587af7cb',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.spoonacular.com',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://api.spoonacular.com/recipes/642583/information?apiKey=0f7e1eeb01e34246a68313ea587af7cb',
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: Client network socket disconnected before secure TLS connection was established
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1732:19)
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://api.spoonacular.com/recipes/642583/information?apiKey=0f7e1eeb01e34246a68313ea587af7cb',
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: Client network socket disconnected before secure TLS connection was established
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1732:19)
+    _currentUrl: 'https://api.spoonacular.com/recipes/642583/information?apiKey=0f7e1eeb01e34246a68313ea587af7cb',
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: Client network socket disconnected before secure TLS connection was established
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1732:19)
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: Client network socket disconnected before secure TLS connection was established
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1732:19)
+  },
+  cause: Error: Client network socket disconnected before secure TLS connection was established
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1732:19)
+  cause: Error: Client network socket disconnected before secure TLS connection was established
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1732:19)
+      at TLSSocket.onConnectEnd (node:_tls_wrap:1732:19)
+      at TLSSocket.emit (node:events:536:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
+
+
+
+
+
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
+
+
+
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+    path: null,
+    host: 'api.spoonacular.com',
+    path: null,
+    path: null,
+    host: 'api.spoonacular.com',
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
+
+
+
+
+
+
+
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
+
+
+
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
+
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    path: null,
+    host: 'api.spoonacular.com',
+    path: null,
+    path: null,
+    host: 'api.spoonacular.com',
+    port: 443,
+    localAddress: undefined
+  }
+}
